@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Market Analysis</title>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Bootstraps Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/series-label.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            Coding Stock
+        </div>
+
+        <div class="search-conatainer">
+            <input type="text" placeholder="Feature Comming Soon">
+            <button><i class="bi bi-search"></i></button>
+        </div>
+    </nav>
+    <h1 class="page-heading">
+        Stock Market Analysis
+    </h1>
+    <div class="main-body">
+        <!-- Stocks Performance -->
+
+        <section class="stock-details">
+            <div class="stock-performance">
+                <div id="stock-current-value" class="stock-per-value">
+                    <div class="value-icon-container">
+                        <div class="value-icon">
+                            <i class="bi bi-wallet"></i>
+                        </div>
+                        <i class="bi bi-three-dots-vertical"></i>
+                    </div>
+                    <h4>Current Value</h4>
+                    <h5 class="cur-val">$3.5504</h5>
+                </div>
+
+                <div id="stock-best-value" class="stock-per-value">
+                    <div class="value-icon-container">
+                        <div class="value-icon">
+                            <i class="bi bi-coin"></i>
+                        </div>
+                        <i class="bi bi-three-dots-vertical"></i>
+                    </div>
+                    <h4>Best Value</h4>
+                    <h5 class="best-val">$3.5504</h5>
+                </div>
+
+                <div id="stock-worst-value" class="stock-per-value">
+                    <div class="value-icon-container">
+                        <div class="value-icon">
+                            <i class="bi bi-coin"></i>
+                        </div>
+                        <i class="bi bi-three-dots-vertical"></i>
+                    </div>
+                    <h4>Worst Value</h4>
+                    <h5 class="worst-val">$3.5504</h5>
+                </div>
+            </div>
+
+            <div class="performance-chart">
+                <div class="performance-chart-header">
+                    <h3>Performance Chart</h3>
+                    <div class="time-frame-container">
+                        <div class="time-frame-items" id="one-month">
+                            1M
+                        </div>
+
+                        <div class="time-frame-items" id="three-month">
+                            3M
+                        </div>
+
+                        <div class="time-frame-items" id="one-year">
+                            1Y
+                        </div>
+
+                        <div class="time-frame-items" id="five-year">
+                            5Y
+                        </div>
+                    </div>
+                </div>
+                
+                <figure class="highcharts-figure">
+                    <div id="container"></div>
+                <!--     <p class="highcharts-description">
+                       
+                    </p> -->
+                </figure>
+            </div>
+
+
+        </section>
+
+        <section class="stock-list-container">
+            <h3>Stock List</h3>
+
+            <div class="stock-list">
+                <div class="loading">Loading...</div>
+                <!-- <div class="stock-list-items">
+                    <h4 class="stock-name">Stock Name</h4>
+                    <h4 class="stock-value">$2.20</h4>
+                    <h4 class="stock-profit">2.20%</h4>
+                </div> -->
+            </div>
+
+        </section>
+    </div>
+
+    <div class="stock-summary">
+        <div class="loading">Loading...</div>
+
+        <!-- <h3>Stock Name</h3>
+
+        <p>
+
+        </p> -->
+    </div>
+
+
+    <!-- Custom JS -->
+    <script src="./script.js"></script>
+</body>
+
+</html>
